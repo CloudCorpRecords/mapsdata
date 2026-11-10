@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "mapsdata": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^4"
+  },
+  "description": "Google Maps data as JSON from your agent: a local bridge to the hosted HasData Google Maps MCP service that searches places and fetches place details, reviews, photos, posts, and contributor reviews by place. One bin serves a small CLI and a stdio MCP server.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/mapsdata#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/mapsdata",
+  "name": "@reneturcios/mapsdata",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/mapsdata.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
